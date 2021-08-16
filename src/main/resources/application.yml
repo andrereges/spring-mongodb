@@ -1,0 +1,18 @@
+server:
+  error:
+    include-message: ALWAYS
+    include-binding-errors: ALWAYS
+    include-stacktrace: ON_PARAM #use in url on browser to show stacktrace: ?trace=true
+    include-exception: FALSE
+
+spring:
+  data:
+    mongodb:
+      uri: mongodb://localhost:27017/riggsjornalusadosp
+#    mongodb:
+#      host: localhost
+#      port: 27017
+#      authentication-database: admin
+#      database: jornal_usado_db
+#      username: root
+#      password: root

@@ -1,0 +1,20 @@
+version: "3"
+services:
+  mongodb:
+    image: mongo
+    container_name: mongodb
+    ports:
+      - 27017:27017
+    labels:
+      name: mongodb
+    volumes:
+      - mongodb_data:/data/db
+    networks:
+      - mongo-network
+
+volumes:
+  mongodb_data:
+
+networks:
+  mongo-network:
+    driver: bridge
